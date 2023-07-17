@@ -1,13 +1,15 @@
-// import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import { store } from '@/store/store'
-import { useSelector } from 'react-redux';
-
-const inter = Inter({ subsets: ['latin'] })
+import { useDispatch, useSelector } from 'react-redux';
+import { add, remove } from '@/store/slices/appSlice'
 
 export default function Home() {
+  // https://redux-toolkit.js.org/tutorials/quick-start
   const appReducer = useSelector((state) => state.appReducer)
+  const dispath = useDispatch()
   return (
-    <div>Index: {appReducer.count1}</div>
+    <div>
+      <button onClick={()=>dispath(remove())}>-</button>
+      <div>Counter: {appReducer.count1}</div>
+      <button onClick={()=>dispath(add())}>+</button>
+    </div>
   )
 }
