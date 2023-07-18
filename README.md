@@ -36,3 +36,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Installation
+
+Config when create new project
+
+```
+npx create-next-app@13.3 next-13-redux-counter
+Need to install the following packages:
+  create-next-app@13.3.4
+Ok to proceed? (y) y
+✔ Would you like to use TypeScript with this project? … (No) / Yes
+✔ Would you like to use ESLint with this project? … No / (Yes)
+✔ Would you like to use Tailwind CSS with this project? … No / (Yes)
+✔ Would you like to use `src/` directory with this project? … No / (Yes)
+✔ Would you like to use experimental `app/` directory with this project? … (No) / Yes
+✔ What import alias would you like configured? … (@)/*
+Creating a new Next.js app in /Users/washira/projects/next-13-redux-counter.
+```
